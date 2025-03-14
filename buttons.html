@@ -1,0 +1,68 @@
+<html>
+  <head>
+<title>buttons</title>
+<style>
+    .subscribe-button,.join-button{
+        font-size:14px;
+        margin-right:12px;
+        border-radius:2px;
+        cursor:pointer;
+        line-height:normal;
+
+    }
+    .subscribe-button{
+        background-color: rgb(204, 0, 0);;
+        color:white;
+        padding: 10px 16px;
+        border:none;
+        transition: opacity 0.15s;
+    }
+    .subscribe-button:hover{
+        opacity:0.7;
+        /*Opacity will effecty child elements too so everytime just check if you need to use opacity or rgba*/
+
+    }
+    .subscribe-button:active{
+        opacity: 0.4;
+        transition: none;
+    }
+    .join-button{
+        background-color: white;
+        color:rgb(6, 95, 212);
+        border:1px solid rgb(6, 95, 212);
+        padding: 10px 15px;
+        transition:color 0.15s,background-color 0.15S;
+    }
+    .join-button:hover{
+        background-color: rgb(6, 95, 212);
+        color:white;
+    }
+    .join-button:active{
+        opacity:0.7;
+    }
+    .tweet-button{
+        font-size:15px;
+        background-color:rgb(29, 155, 240);
+        color:white;
+        border-radius:50px;
+        border:none;
+        font-weight:bold;
+        padding:7px 16px;
+        cursor:pointer;
+        transition:box-shadow 0.15s;
+        line-height:22.5px;
+    }
+    .tweet-button:hover{
+        box-shadow: 0px 4px 8px rgba(0, 0, 0 , 0.2);
+    }
+    .tweet-button:active{
+        opacity:0.7;
+    }
+</style>
+  </head>  
+  <body>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+  </body>
+</html>
