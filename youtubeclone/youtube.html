@@ -2,5 +2,304 @@
     <head>
         <title>Youtube clone</title>
     </head>
-    <body></body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/video.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+        }
+        .exercise{
+            font-family:Roboto, Arial, sans-serif;
+            padding-left:50px;
+            padding-top:50px;
+        }  
+        @media (min-width: 870px) and (max-width: 1124px) {
+        .video-grid {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+
+      @media (min-width: 1125px) {
+        .video-grid {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+
+    </style>
+    <body>
+        <header class="header-section">
+            <div class="left-section">
+                <img class="hamburger" src="icons/hamburger-menu.svg">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <div class="search-button">
+                <img src="icons/search.svg"></div>
+                <div class="voice-search">
+                <img src="icons/voice-search-icon.svg"></div>
+            </div>
+            <div class="right-section">
+                <img class=right-icon src="icons/upload.svg">
+                <img class=right-icon src="icons/youtube-apps.svg">
+                <img class=right-icon src="icons/notifications.svg">
+                <img class="my-channel" src="images/my-channel.jpeg">
+            </div>
+        </header>
+        <div class="side-bar">
+            <div class="sidebar-item">
+                <img src="icons/home.svg"> 
+                <div>Home</div>
+            </div>
+            <div class="sidebar-item">
+                <img src="icons/explore.svg">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-item">
+                <img src="icons/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-item">
+                <img src="icons/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-item">
+                <img src="icons/youtube-music.svg">
+                <div>Youtube Music</div>
+            </div>
+            <div class="sidebar-item">
+                <img src="icons/library.svg">
+                <div>Library</div>
+            </div>
+        </div>
+        <div class="exercise">
+        <section>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-2.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-3.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-4.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-5.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-6.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-7.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-8.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-9.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-10.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-11.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumbnail-container">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                            <img class="video-thumbnail" src="images/thumbnail-12.webp" alt="Description of Image">
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="profile-picture-container">
+                            <img class="profile-picture" src="images/thumbnail-1.webp" alt="Description of Image">
+                        </div>
+                        <div class="video-text">
+                            <div class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="video-owner"> Marques Brownlee</div>
+                            <div class="video-stats">3.4M views &#183; 6 months ago</div>         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </body>
 </html>
