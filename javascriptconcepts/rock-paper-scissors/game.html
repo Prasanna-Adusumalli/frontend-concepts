@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <style>
+      body{
+        background-color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .welcome-text{
+        color:yellow;
+      }
+      .item-container{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        width:80%;
+      }
+      .item-image{
+        height:200px;
+        width:300px;
+        cursor:pointer;
+      }
+      #result-container{
+        color:yellow;
+        padding-bottom:20px;
+        min-height:80px;
+      }
+      #reset-button{
+        padding:10px 30px;
+        margin-left:30px;
+        background-color: rgb(173, 171, 94);
+        border:none;
+        border-radius:4px;
+      }
+    </style>
+    <script>
+        let playerScore=0;
+        let computerScore=0;
+        let roundWinner;
+        let gameWinner;
+      function playGame(playerMove){
+        const computerMove=generateComputerMove();
+        const playerName='Harish';
+        if(playerMove==computerMove){
+          roundWinner='No one';
+        }
+        else if((playerMove=='rock'&&computerMove=='paper')||
+        (playerMove=='paper'&&computerMove=='scissors')||
+        (playerMove=='scissors'&&computerMove=='rock')){
+          computerScore++;
+          roundWinner= 'Computer';
+        }
+        else{
+          playerScore++;
+          roundWinner=playerName;
+        }
+        var result1='Player Move: '+playerMove + ', Computer Move: '+computerMove +', '+roundWinner + " wins the round";
+        
+        if( playerScore==computerScore){
+          gameWinner='Both'
+        }
+        else{
+          gameWinner=playerScore>computerScore?playerName:'Computer';
+        }
+        var result2='Player Score: '+playerScore+ ', Computer Score: '+ computerScore + ', '+gameWinner+ " wins the game";
+        document.getElementById("result1").innerHTML=result1;
+        document.getElementById("result2").innerHTML=result2;
+       
+      }
+      function generateComputerMove(){
+        let randomNumber=Math.random();
+        let computerMove;
+        if(randomNumber>0.0 && randomNumber<0.33)
+        {
+            computerMove='rock';
+        }
+        else if(randomNumber>0.33 && randomNumber<0.66){
+          computerMove='paper';
+        }
+        else{
+          computerMove='scissors';
+        }
+        return computerMove;
+
+      }
+      function resetGame(){
+        playerScore=0;
+        computerScore=0;
+        document.getElementById("result1").innerHTML='';
+        document.getElementById("result2").innerHTML='';
+      }
+    </script>
+  </head>
+  <body>
+    <P class="welcome-text">Let's play Rock, Paper, Scissors!</P>
+    <P class="welcome-text">Selct your move and I'll take you on! </P>
+    <div class="item-container">
+    <img class="item-image" src="images/rock.jpg" onClick="playGame('rock')">
+    <img class="item-image" src="images/paper.jpg" onClick="playGame('paper')">
+    <img class="item-image" src="images/scissors.jpg" onClick="playGame('scissors')">
+    </div>
+    
+    <div id="result-container">
+    <p id="result1"> </p>
+    <p id="result2"> </p>
+    </div>
+
+    <button id="reset-button" onClick="resetGame()">Reset</button>
+  </body>
+</html>
